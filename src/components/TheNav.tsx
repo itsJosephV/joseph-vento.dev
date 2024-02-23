@@ -82,7 +82,7 @@ const TheNav = () => {
             aria-label={link.label}
             className={`
             ${activeLink === link.label ? "text-teal-400" : ""} 
-            ${link.disabled ? "cursor-not-allowed text-zinc-500" : "duration-200 hover:text-zinc-100"}
+            ${link.disabled ? "cursor-not-allowed text-zinc-500" : "duration-200 md:hover:text-zinc-100"}
             `}
             href={link.url}
             onClick={(e) => link.disabled && e.preventDefault()}
