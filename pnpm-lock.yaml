@@ -14,6 +14,9 @@ dependencies:
   classnames:
     specifier: ^2.5.1
     version: 2.5.1
+  clsx:
+    specifier: ^2.1.0
+    version: 2.1.0
   postcss:
     specifier: ^8.4.33
     version: 8.4.33
@@ -1581,6 +1584,11 @@ packages:
 
   /classnames@2.5.1:
     resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
+    dev: false
+
+  /clsx@2.1.0:
+    resolution: {integrity: sha512-m3iNNWpd9rl3jvvcBnu70ylMdrXt8Vlq4HYadnU5fwcOtvkSQWPmj7amUcDT2qYI7risszBjI5AUIUox9D16pg==}
+    engines: {node: '>=6'}
     dev: false
 
   /color-convert@2.0.1:

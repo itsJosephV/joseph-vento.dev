@@ -62,7 +62,10 @@ const ThemeToggle = ({theme, setTheme}: Props) => {
 
   return (
     <DropdownMenu.Root>
-      <DropdownMenu.Trigger className="hidden cursor-pointer text-zinc-100 outline-none">
+      <DropdownMenu.Trigger
+        className="cursor-pointer text-zinc-100 outline-none"
+        onClick={(e) => e.stopPropagation()}
+      >
         {theme === "dark" && <DarkIcon />}
         {theme === "light" && <PenIcon />}
         {theme === "system" && <GCIcon />}
