@@ -26,14 +26,6 @@ body {
   font-family: "Playfair Display", serif;
 }
 
-.active-link {
-  @apply text-teal-400
-}
-
-.disable-link {
-  @apply text-zinc-500 cursor-not-allowed
-}
-
 .custom-shadow {
   box-shadow: rgba(82, 82, 91, 0.1) 0px 8px 24px;
 }
