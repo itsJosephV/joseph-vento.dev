@@ -72,9 +72,9 @@ const ThemeToggle = ({theme, setTheme}: Props) => {
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
         <DropdownMenu.Content
-          className="min-w-[80px] origin-top space-y-1.5 rounded-md border border-zinc-100/10 bg-zinc-900 p-1.5 backdrop-blur-md rdx-state-closed:animate-fade-out rdx-state-open:animate-fade-in"
+          className="z-10 min-w-[80px] origin-top space-y-1.5 rounded-md border border-zinc-100/10 bg-zinc-900 p-1.5 backdrop-blur-md rdx-state-closed:animate-fade-out rdx-state-open:animate-fade-in"
           side="bottom"
-          sideOffset={8}
+          sideOffset={20}
         >
           {themeOptions.map((item, i) => {
             return (

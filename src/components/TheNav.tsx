@@ -7,6 +7,8 @@ import {AboutMeIcon} from "../icons/AboutMeIcon";
 import {BlogIcon} from "../icons/ContactIcon";
 import {LinkProps} from "../types";
 
+import ThemeToggle from "./ThemeToggle";
+
 const LINKS: LinkProps[] = [
   {
     title: "Experience",
@@ -36,6 +38,9 @@ const LINKS: LinkProps[] = [
 ];
 
 const TheNav = () => {
+  const [theme, setTheme] = useState<string | null>(
+    localStorage.getItem("theme") ? localStorage.getItem("theme") : "system",
+  );
   const [activeLink, setActiveLink] = useState(null);
   const navRef = useRef(null);
 
@@ -85,13 +90,17 @@ const TheNav = () => {
             ${link.disabled ? "cursor-not-allowed text-zinc-500" : "duration-200 md:hover:text-zinc-100"}
             `}
             href={link.url}
-            onClick={(e) => link.disabled && e.preventDefault()}
+            onClick={(e) => {
+              link.disabled && e.preventDefault();
+              e.stopPropagation();
+            }}
           >
             {breakpoint && breakpoint === "md" ? link.title : link.icon}
             {/* {link.title} */}
           </a>
         );
       })}
+      <ThemeToggle setTheme={setTheme} theme={theme} />
     </nav>
   );
 };
