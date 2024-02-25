@@ -7,7 +7,7 @@ import {AboutMeIcon} from "../icons/AboutMeIcon";
 import {BlogIcon} from "../icons/ContactIcon";
 import {LinkProps} from "../types";
 
-import ThemeToggle from "./ThemeToggle";
+// import ThemeToggle from "./ThemeToggle";
 
 const LINKS: LinkProps[] = [
   {
@@ -38,9 +38,9 @@ const LINKS: LinkProps[] = [
 ];
 
 const TheNav = () => {
-  const [theme, setTheme] = useState<string | null>(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "system",
-  );
+  // const [theme, setTheme] = useState<string | null>(
+  //   localStorage.getItem("theme") ? localStorage.getItem("theme") : "system",
+  // );
   const [activeLink, setActiveLink] = useState(null);
   const navRef = useRef(null);
 
@@ -49,6 +49,7 @@ const TheNav = () => {
   const {breakpoint} = useBreakpoint(BREAKPOINTS);
 
   useEffect(() => {
+    const sections = document.querySelectorAll("section");
     const options = {
       root: null,
       rootMargin: "0px",
@@ -65,13 +66,27 @@ const TheNav = () => {
 
     const observer = new IntersectionObserver(handleIntersection, options);
 
-    document.querySelectorAll("section").forEach((section) => {
+    sections.forEach((section) => {
       observer.observe(section);
     });
 
-    return () => {
-      observer.disconnect();
+    // document.querySelectorAll("section").forEach((section) => {
+    //   observer.observe(section);
+    // });
+
+    document.onvisibilitychange = () => {
+      if (document.visibilityState === "hidden") {
+        observer.disconnect();
+      } else {
+        sections.forEach((section) => {
+          observer.observe(section);
+        });
+      }
     };
+
+    // return () => {
+    //   observer.disconnect();
+    // };
   }, []);
 
   return (
@@ -90,17 +105,13 @@ const TheNav = () => {
             ${link.disabled ? "cursor-not-allowed text-zinc-500" : "duration-200 md:hover:text-zinc-100"}
             `}
             href={link.url}
-            onClick={(e) => {
-              link.disabled && e.preventDefault();
-              e.stopPropagation();
-            }}
+            onClick={(e) => link.disabled && e.preventDefault()}
           >
             {breakpoint && breakpoint === "md" ? link.title : link.icon}
-            {/* {link.title} */}
           </a>
         );
       })}
-      <ThemeToggle setTheme={setTheme} theme={theme} />
+      {/* <ThemeToggle setTheme={setTheme} theme={theme} /> */}
     </nav>
   );
 };

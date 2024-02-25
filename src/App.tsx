@@ -1,15 +1,15 @@
-import {useState} from "react";
+// import {useState} from "react";
 
 import TheNav from "./components/TheNav";
 import Footer from "./components/Footer";
 import ScrollUpButton from "./components/ScrollUpButton";
 import PortfolioContent from "./page/PortfolioContent";
-import ThemeToggle from "./components/ThemeToggle";
+// import ThemeToggle from "./components/ThemeToggle";
 
 function App() {
-  const [theme, setTheme] = useState<string | null>(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "system",
-  );
+  // const [theme, setTheme] = useState<string | null>(
+  //   localStorage.getItem("theme") ? localStorage.getItem("theme") : "system",
+  // );
 
   //   const onWindowMatch = () => {
   //     if (localStorage.theme === "dark" || (!("theme" in localStorage) && darkQuery.matches)) {
@@ -60,7 +60,7 @@ function App() {
         <ScrollUpButton />
       </header>
       <main className="mx-auto max-w-[1072px] pb-20 pt-24">
-        <ThemeToggle setTheme={setTheme} theme={theme} />
+        {/* <ThemeToggle setTheme={setTheme} theme={theme} /> */}
         <article className="grid-layout slide-enter-content">
           <PortfolioContent />
         </article>

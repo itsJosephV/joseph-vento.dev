@@ -22,7 +22,10 @@ const EmailMenu = () => {
       <DropdownMenu.Root>
         <DropdownMenu.Trigger
           className="cursor-pointer rounded-md border border-zinc-100/10 bg-zinc-900 p-2 text-zinc-100 outline-none duration-200 hover:bg-zinc-800"
-          onClick={(e) => e.stopPropagation()}
+          onClick={(e) => {
+            e.stopPropagation();
+            console.log("button pressed");
+          }}
         >
           <MailIcon />
         </DropdownMenu.Trigger>
