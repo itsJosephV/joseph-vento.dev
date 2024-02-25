@@ -61,7 +61,7 @@ const ThemeToggle = ({theme, setTheme}: Props) => {
   }, [darkQuery, element.classList]);
 
   return (
-    <DropdownMenu.Root>
+    <DropdownMenu.Root modal={false}>
       <DropdownMenu.Trigger
         className="cursor-pointer text-zinc-100 outline-none"
         onClick={(e) => e.stopPropagation()}

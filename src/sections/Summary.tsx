@@ -1,4 +1,4 @@
-// import EmailMenu from "../components/EmailMenu";
+import EmailMenu from "../components/EmailMenu";
 
 const Summary = () => {
   return (
@@ -25,12 +25,12 @@ const Summary = () => {
         in Frontend development which involves designing and crafting appealing, remarkable and
         user-friendly digital interfaces.
       </p>
-      {/* <div className="flex flex-row flex-wrap gap-2">
+      <div className="flex flex-row flex-wrap gap-2">
         <a className="flex cursor-pointer items-center gap-0.5 rounded-md border border-zinc-100/10 bg-zinc-900 px-3 py-2 text-xs font-medium tracking-wide text-zinc-100 duration-200 hover:bg-zinc-800">
           DOWNLOAD CV
         </a>
         <EmailMenu />
-      </div> */}
+      </div>
     </>
   );
 };
