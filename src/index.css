@@ -15,7 +15,9 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   min-height: calc(100vh - var(--footer-h));
+  /* pointer-events: none; */
   @apply dark:bg-zinc-950 bg-zinc-50 duration-300 dark:text-zinc-300 text-zinc-600 antialiased;
+
 }
 
 .grid-layout {
@@ -25,10 +27,6 @@ body {
 .play-fair {
   font-family: "Playfair Display", serif;
 }
-
-/* .active-link {
-  @apply text-teal-400
-} */
 
 .disable-link {
   @apply text-zinc-500 cursor-not-allowed
@@ -77,4 +75,17 @@ body {
   .slide-enter-content > *:nth-child(18) { --enter-stage: 18; }
   .slide-enter-content > *:nth-child(19) { --enter-stage: 19; }
   .slide-enter-content > *:nth-child(20) { --enter-stage: 20; }
+}
+
+.modal-open {
+  overflow: hidden !important;
+  overscroll-behavior: contain;
+  position: relative !important;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0px !important;
+  pointer-events: none;
 }

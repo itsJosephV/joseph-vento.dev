@@ -74,7 +74,7 @@ const ThemeToggle = ({theme, setTheme}: Props) => {
   }
 
   return (
-    <DropdownMenu.Root modal={false}>
+    <DropdownMenu.Root modal={true}>
       <DropdownMenu.Trigger
         className="cursor-pointer text-zinc-900/60 outline-none duration-200 hover:text-rose-500 dark:text-zinc-400 dark:md:hover:text-zinc-100"
         onClick={(e) => e.stopPropagation()}

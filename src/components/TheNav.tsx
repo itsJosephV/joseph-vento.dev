@@ -12,25 +12,25 @@ import ThemeToggle from "./ThemeToggle";
 const LINKS: LinkProps[] = [
   {
     title: "Experience",
-    url: "/#experience",
+    url: "#experience",
     label: "experience",
     icon: <ExperienceIcon className="text-2xl" />,
   },
   {
     title: "Projects",
-    url: "/#projects",
+    url: "#projects",
     label: "projects",
     icon: <CodeIcon className="text-2xl" />,
   },
   {
     title: "About me",
-    url: "/#about-me",
+    url: "#about-me",
     label: "about-me",
     icon: <AboutMeIcon className="text-2xl" />,
   },
   {
     title: "Blog",
-    url: "/#blog",
+    url: "#blog",
     label: "blog",
     icon: <BlogIcon className="text-2xl" />,
     disabled: true,

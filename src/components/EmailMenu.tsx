@@ -17,22 +17,31 @@ const EmailMenu = () => {
     }, 2500);
   }
 
+  const handleModalMenu = (e: any) => {
+    e.stopPropagation();
+    document.body.classList.add("modal-open");
+  };
+
+  const handleCloseModal = () => {
+    document.body.classList.remove("modal-open");
+  };
+
   return (
     <div className="relative">
-      <DropdownMenu.Root modal={false}>
-        <DropdownMenu.Trigger
-          className="h-full rounded-md border border-zinc-900/10 bg-zinc-100 px-1.5 text-xl font-medium text-zinc-900 duration-200 hover:bg-zinc-200 dark:border-zinc-100/10 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
-          onClick={(e) => {
-            e.stopPropagation();
-            console.log("button pressed");
-          }}
-        >
-          <MailIcon />
+      <DropdownMenu.Root modal={false} onOpenChange={handleCloseModal}>
+        {/* <DropdownMenu.Root modal={true}> */}
+        <DropdownMenu.Trigger asChild>
+          <button
+            className="h-full rounded-md border border-zinc-900/10 bg-zinc-100 px-1.5 text-xl font-medium text-zinc-900 duration-200 hover:bg-zinc-200 dark:border-zinc-100/10 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
+            onClick={handleModalMenu}
+          >
+            <MailIcon className="" />
+          </button>
         </DropdownMenu.Trigger>
         <DropdownMenu.Portal>
           <DropdownMenu.Content
             align="start"
-            className="min-w-[150px] origin-top-left rounded-md border border-zinc-900/10 bg-zinc-100 p-1.5 backdrop-blur-md rdx-state-closed:animate-fade-out rdx-state-open:animate-fade-in dark:border-zinc-100/20 dark:bg-zinc-900"
+            className="pointer-events-auto min-w-[150px] origin-top-left rounded-md border border-zinc-900/10 bg-zinc-100 p-1.5 backdrop-blur-md rdx-state-closed:animate-fade-out rdx-state-open:animate-fade-in dark:border-zinc-100/20 dark:bg-zinc-900"
             side="right"
             sideOffset={8}
           >
