@@ -21,7 +21,7 @@ const EmailMenu = () => {
     <div className="relative">
       <DropdownMenu.Root modal={false}>
         <DropdownMenu.Trigger
-          className="cursor-pointer rounded-md border border-zinc-100/10 bg-zinc-900 p-2 text-zinc-100 outline-none duration-200 hover:bg-zinc-800"
+          className="h-full rounded-md border border-zinc-900/10 bg-zinc-100 px-1.5 text-xl font-medium text-zinc-900 duration-200 hover:bg-zinc-200 dark:border-zinc-100/10 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
           onClick={(e) => {
             e.stopPropagation();
             console.log("button pressed");
@@ -32,24 +32,24 @@ const EmailMenu = () => {
         <DropdownMenu.Portal>
           <DropdownMenu.Content
             align="start"
-            className="min-w-[150px] origin-top-left rounded-md border border-zinc-100/10 bg-zinc-900 p-1.5 backdrop-blur-md rdx-state-closed:animate-fade-out rdx-state-open:animate-fade-in"
+            className="min-w-[150px] origin-top-left rounded-md border border-zinc-900/10 bg-zinc-100 p-1.5 backdrop-blur-md rdx-state-closed:animate-fade-out rdx-state-open:animate-fade-in dark:border-zinc-100/20 dark:bg-zinc-900"
             side="right"
             sideOffset={8}
           >
             <DropdownMenu.Item className="mb-2 outline-none" onClick={(e) => e.preventDefault()}>
-              <p className="text-center text-xs">{EMAIL}</p>
+              <p className="text-center text-xs text-zinc-900 dark:text-zinc-100">{EMAIL}</p>
             </DropdownMenu.Item>
             <div className="flex flex-row gap-1.5">
               <DropdownMenu.Item
                 asChild
-                className="w-full cursor-pointer rounded-md bg-zinc-800 py-1 text-center text-xs  text-zinc-100 outline-none duration-200 hover:bg-zinc-700"
+                className="w-full cursor-pointer rounded-md bg-zinc-200 py-1 text-center text-xs  text-zinc-900 outline-none duration-200 hover:bg-zinc-300 dark:bg-zinc-800 dark:text-zinc-100 dark:hover:bg-zinc-700"
               >
                 <a className=" " href="mailto:jvp.2703@gmail.com">
                   Mail
                 </a>
               </DropdownMenu.Item>
               <DropdownMenu.Item
-                className="w-full cursor-pointer rounded-md bg-zinc-800 py-1 text-center text-xs text-zinc-100 outline-none duration-200 hover:bg-zinc-700"
+                className="w-full cursor-pointer rounded-md bg-zinc-200 py-1 text-center text-xs text-zinc-900 outline-none duration-200 hover:bg-zinc-300 dark:bg-zinc-800 dark:text-zinc-100"
                 onClick={handleCopyEmail}
               >
                 Copy

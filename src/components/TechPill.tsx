@@ -8,13 +8,13 @@ const TechPill = ({techItem}: {techItem: string}) => {
     "bg-green-500": techItem === "MongoDB",
     "bg-sky-500": techItem === "React",
     "bg-blue-500": techItem === "TypeScript",
-    "bg-violet-500": techItem === "RadixUI",
+    "bg-violet-500": techItem === "Radix UI",
   });
 
   return (
-    <li className="flex items-center gap-1 rounded-md bg-zinc-800/70 px-1.5 py-0.5">
+    <li className="flex items-center gap-1 rounded-md bg-zinc-200 px-1.5 py-0.5 dark:bg-zinc-800/70">
       <div className={`h-[4px] w-[4px] rounded-full p-1 ${techClass}`} />
-      <p className="text-xs text-zinc-300">{techItem}</p>
+      <p className="text-xs text-zinc-500 dark:text-zinc-400">{techItem}</p>
     </li>
   );
 };

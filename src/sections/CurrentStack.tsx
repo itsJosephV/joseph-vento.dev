@@ -6,16 +6,19 @@ import {NodeIcon} from "../icons/NodeIcon";
 import {MongoDBIcon} from "../icons/MongoDBIcon";
 
 const CurrentStack = () => {
-  const iconStyle = "text-2xl text-teal-300 duration-200 hover:text-inherit";
+  const iconStyle =
+    "text-3xl dark:text-emerald-300 text-zinc-700 duration-200 dark:hover:text-inherit hover:text-zinc-700/70";
 
   return (
-    <div className="rounded-md bg-zinc-900 p-4 pb-6">
-      <h2 className="mb-2 text-center text-xl font-semibold text-zinc-100">My current stack</h2>
-      <p className="mb-6 text-center text-zinc-300">
+    <div className="rounded-md bg-zinc-200/50 p-4 pb-6 dark:bg-zinc-900">
+      <h2 className="mb-2 text-center text-xl font-semibold text-zinc-900 dark:text-zinc-100">
+        My Current Stack
+      </h2>
+      <p className="mb-6 text-center dark:text-zinc-300">
         Mainly using React and TypeScript, complemented with the most popular frameworks like
         Next.js and Tailwind CSS.
       </p>
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="flex flex-wrap justify-center gap-5">
         <ReactIcon
           className={iconStyle}
           data-tooltip-content="React"

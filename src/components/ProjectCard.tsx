@@ -6,12 +6,12 @@ import TechPill from "./TechPill";
 
 const ProjectCard = ({projectItem}: {projectItem: ProjectProps}) => {
   return (
-    <div className="custom-shadow overflow-hidden rounded-md border border-zinc-100/10 bg-zinc-950">
+    <div className="overflow-hidden rounded-md border border-zinc-900/10 bg-zinc-100 dark:border-zinc-100/10 dark:bg-zinc-950">
       <img alt="image" className="h-full w-full object-contain" src={projectItem.image} />
-      <div className="h-auto border-t border-zinc-100/10 p-3 px-4">
+      <div className="h-auto border-t border-t-zinc-900/10 p-3 px-4 dark:border-t-zinc-100/10">
         <div className="mb-2 flex items-center justify-between">
-          <p className="font-medium text-zinc-100">{projectItem.title}</p>
-          <div className="flex gap-1 text-zinc-400">
+          <p className="font-medium text-zinc-900 dark:text-zinc-100">{projectItem.title}</p>
+          <div className="flex gap-1 text-zinc-400 dark:text-zinc-500">
             {projectItem.desktop && (
               <DesktopIcon
                 data-tooltip-content="Desktop"
@@ -35,10 +35,12 @@ const ProjectCard = ({projectItem}: {projectItem: ProjectProps}) => {
           })}
         </ul>
         <div className="flex items-center justify-between">
-          <time className="font-mono text-[0.8rem] text-zinc-400">{projectItem.date}</time>
+          <time className="font-mono text-[0.8rem] text-zinc-400 dark:text-zinc-500">
+            {projectItem.date}
+          </time>
           <div className="flex items-center gap-3">
             <a
-              className="whitespace-nowrap font-mono text-[0.8rem] text-teal-400 duration-200 after:font-sans after:content-['_↗'] hover:text-teal-400/80"
+              className="whitespace-nowrap font-mono text-[0.8rem] text-rose-500 duration-200 after:font-sans after:content-['_↗'] dark:text-teal-500 dark:hover:text-teal-500/80"
               href={projectItem.repoURL}
               rel="noopener noreferrer"
               target="_blank"
@@ -46,7 +48,7 @@ const ProjectCard = ({projectItem}: {projectItem: ProjectProps}) => {
               Code
             </a>
             <a
-              className="whitespace-nowrap font-mono text-[0.8rem] text-teal-400 duration-200 after:font-sans after:content-['_↗'] hover:text-teal-400/80"
+              className="whitespace-nowrap font-mono text-[0.8rem] text-rose-500 duration-200 after:font-sans after:content-['_↗'] dark:text-teal-500 dark:hover:text-teal-500/80"
               href={projectItem.demoURL}
               rel="noopener noreferrer"
               target="_blank"

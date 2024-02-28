@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 :root {
-  --footer-h: 40px;
+  --footer-h: 41px;
 }
 
 html {
@@ -15,7 +15,7 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   min-height: calc(100vh - var(--footer-h));
-  @apply dark:bg-zinc-950 bg-zinc-100 duration-300 text-zinc-300 antialiased;
+  @apply dark:bg-zinc-950 bg-zinc-50 duration-300 dark:text-zinc-300 text-zinc-600 antialiased;
 }
 
 .grid-layout {
@@ -32,10 +32,6 @@ body {
 
 .disable-link {
   @apply text-zinc-500 cursor-not-allowed
-}
-
-.custom-shadow {
-  box-shadow: rgba(82, 82, 91, 0.1) 0px 8px 24px;
 }
 
 @keyframes slide-enter {

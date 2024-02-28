@@ -4,11 +4,11 @@ import {LinkedInIcon} from "../icons/LinkedInIcon";
 
 const AboutMe = () => {
   const linkStyle =
-    "cursor-pointer font-medium underline decoration-zinc-700 underline-offset-4 duration-200 hover:decoration-inherit";
+    "cursor-pointer font-medium underline decoration-zinc-300 underline-offset-4 duration-200 hover:decoration-zinc-900 dark:text-zinc-100 dark:decoration-zinc-700 dark:hover:decoration-zinc-100 text-zinc-900 hover:decoration-inherit";
 
   return (
     <>
-      <h2 className="mb-10 text-xl font-semibold text-zinc-100">About me</h2>
+      <h2 className="mb-10 text-xl font-semibold text-zinc-900 dark:text-zinc-100">About me</h2>
       <div className="flex flex-col items-center gap-7 md:flex-row md:items-start md:gap-4">
         <div className="flex w-full md:flex-col">
           <img
@@ -18,24 +18,24 @@ const AboutMe = () => {
           />
           <div className="ml-3 flex flex-col items-start justify-end gap-2 md:ml-0 md:mt-3">
             <a
-              className="order-2 flex flex-row-reverse items-center gap-1 whitespace-nowrap text-sm text-zinc-100 underline decoration-zinc-700 underline-offset-4 duration-200 hover:decoration-zinc-100"
+              className="order-2 flex flex-row-reverse items-center gap-1 whitespace-nowrap text-sm font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 duration-200 hover:decoration-zinc-900 dark:text-zinc-100 dark:decoration-zinc-700 dark:hover:decoration-zinc-100"
               href="https://www.github.com/itsJosephV"
               rel="noopener noreferrer"
               target="_blank"
             >
               itsJosephV
-              <span className="text-[1.1rem] text-violet-300">
+              <span className="text-[1.1rem] text-violet-400">
                 <GithubIcon />
               </span>
             </a>
             <a
-              className="flex flex-row-reverse items-center gap-1 whitespace-nowrap text-sm text-zinc-100 underline decoration-zinc-700 underline-offset-4 duration-200 hover:decoration-zinc-100"
+              className="flex flex-row-reverse items-center gap-1 whitespace-nowrap text-sm font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 duration-200 hover:decoration-zinc-900 dark:text-zinc-100 dark:decoration-zinc-700 dark:hover:decoration-zinc-100"
               href="https://www.linkedin.com/in/josephvp/"
               rel="noopener noreferrer"
               target="_blank"
             >
               josephvp
-              <span className="text-[1.1rem] text-blue-300">
+              <span className="text-[1.1rem] text-blue-400">
                 <LinkedInIcon />
               </span>
             </a>
@@ -52,7 +52,7 @@ const AboutMe = () => {
             <span className="inline-flex flex-wrap gap-1">
               <span>in Gran Canaria</span>
               <a
-                className="flex items-center text-amber-300 duration-200 hover:text-amber-200/70"
+                className="flex items-center text-yellow-400 duration-200 hover:text-yellow-500"
                 href="https://www.google.com/search?q=Gran%20Canaria"
                 rel="noopener noreferrer"
                 target="_blank"

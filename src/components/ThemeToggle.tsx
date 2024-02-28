@@ -2,8 +2,8 @@ import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import {useEffect} from "react";
 
 import {DarkIcon} from "../icons/DarkIcon";
-import {PenIcon} from "../icons/PenIcon";
-import {GCIcon} from "../icons/GCIcon";
+import {LightIcon} from "../icons/LightIcon";
+import {SystemIcon} from "../icons/SystemIcon";
 
 type Props = {
   theme: string | null;
@@ -60,27 +60,38 @@ const ThemeToggle = ({theme, setTheme}: Props) => {
     };
   }, [darkQuery, element.classList]);
 
+  function themeIconToggle() {
+    switch (theme) {
+      case "dark":
+        return <DarkIcon className="text-2xl" />;
+
+      case "light":
+        return <LightIcon className="text-2xl" />;
+
+      case "system":
+        return <SystemIcon className="text-2xl" />;
+    }
+  }
+
   return (
     <DropdownMenu.Root modal={false}>
       <DropdownMenu.Trigger
-        className="cursor-pointer text-zinc-100 outline-none"
+        className="cursor-pointer text-zinc-900/60 outline-none duration-200 hover:text-rose-500 dark:text-zinc-400 dark:md:hover:text-zinc-100"
         onClick={(e) => e.stopPropagation()}
       >
-        {theme === "dark" && <DarkIcon className="text-[1.5em]" />}
-        {theme === "light" && <PenIcon className="text-[1.5em]" />}
-        {theme === "system" && <GCIcon className="text-[1.5em]" />}
+        {themeIconToggle()}
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
         <DropdownMenu.Content
-          className="z-10 min-w-[80px] origin-top space-y-1.5 rounded-md border border-zinc-100/10 bg-zinc-900 p-1.5 backdrop-blur-md rdx-state-closed:animate-fade-out rdx-state-open:animate-fade-in"
+          className="z-10 min-w-[80px] origin-top space-y-1.5 rounded-md border border-zinc-900/10 bg-zinc-100/70 p-1.5 backdrop-blur-md rdx-state-closed:animate-fade-out rdx-state-open:animate-fade-in dark:border-zinc-100/10 dark:bg-zinc-900/50"
           side="bottom"
-          sideOffset={20}
+          sideOffset={18}
         >
           {themeOptions.map((item, i) => {
             return (
               <DropdownMenu.Item
                 key={i}
-                className="w-full cursor-pointer rounded-md bg-zinc-800 py-1 text-center text-xs text-zinc-100 outline-none duration-200 hover:bg-zinc-700"
+                className={`w-full cursor-pointer rounded-md py-0.5 text-center text-xs text-zinc-900 hover:bg-zinc-200 dark:text-zinc-100 ${theme === item.toLocaleLowerCase() && "bg-zinc-200  dark:bg-zinc-800"} outline-none duration-200  dark:hover:bg-zinc-800`}
                 onClick={() => setTheme(item.toLocaleLowerCase())}
               >
                 {item}

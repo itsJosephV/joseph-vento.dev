@@ -8,7 +8,7 @@ const PROJECTS: ProjectProps[] = [
     description:
       "English dictionary app with functionalities similar to those found on macOS and more. Powered by Rapid API.",
     image: "../project-one.webp",
-    techs: ["React", "TypeScript", "Tailwind CSS", "RadixUI"],
+    techs: ["React", "TypeScript", "Tailwind CSS", "Radix UI"],
     repoURL: "https://github.com/itsJosephV/dictionary-app/tree/main",
     demoURL: "https://dictionary-app-phi-weld.vercel.app",
     date: "01/24",
@@ -21,7 +21,7 @@ const PROJECTS: ProjectProps[] = [
     description:
       "Collection of snippets for seamless integration into your apps. This is a source code study project, original work by Alexandru Turcanu.",
     image: "../project-two.webp",
-    techs: ["React", "TypeScript", "Tailwind CSS", "RadixUI"],
+    techs: ["React", "TypeScript", "Tailwind CSS", "Radix UI"],
     repoURL: "https://github.com/itsJosephV/snippets-tailwind-study",
     demoURL: "https://snippets-tailwind-study.vercel.app",
     date: "11/23",
@@ -32,7 +32,7 @@ const PROJECTS: ProjectProps[] = [
 const Projects = () => {
   return (
     <>
-      <h2 className="mb-10 text-xl font-semibold text-zinc-100">Projects</h2>
+      <h2 className="mb-10 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Projects</h2>
       <div className="flex flex-col gap-12">
         {PROJECTS.map((projectItem) => {
           return <ProjectCard key={projectItem.projectID} projectItem={projectItem} />;

@@ -1,11 +1,11 @@
 const OtherLinks = () => {
   return (
     <div className="space-y-8">
-      <p className=" text-zinc-400">
+      <p className="dark:text-inherit">
         Designs at{" "}
         <span>
           <a
-            className="text-zinc-100 underline decoration-zinc-700 underline-offset-4 duration-200 hover:decoration-inherit"
+            className="cursor-pointer font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 duration-200 hover:decoration-inherit dark:text-zinc-100 dark:decoration-zinc-700 dark:hover:decoration-zinc-100"
             href="https://www.instagram.com/skepticalcreator/"
             rel="noopener noreferrer"
             target="_blank"
@@ -15,40 +15,29 @@ const OtherLinks = () => {
         </span>
       </p>
       <div>
-        <p className="mb-3 text-zinc-400">Check out other projects</p>
+        <p className="mb-3 dark:text-inherit">Check out other projects</p>
         <ul className="space-y-2">
           <li className="flex items-center gap-1 whitespace-nowrap">
             <a
-              className="text-zinc-100 underline decoration-zinc-700 underline-offset-4 duration-200 hover:decoration-inherit"
+              className="cursor-pointer font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 duration-200 hover:decoration-inherit dark:text-zinc-100 dark:decoration-zinc-700 dark:hover:decoration-zinc-100"
               href="https://passgenerator-seven.vercel.app"
               rel="noopener noreferrer"
               target="_blank"
             >
               Password Generator
             </a>
-            <span className="font-sans text-zinc-500">{" ↗"}</span>
+            <span className="font-sans text-zinc-400 dark:text-zinc-500">{" ↗"}</span>
           </li>
           <li className="flex items-center gap-1 whitespace-nowrap">
             <a
-              className=" text-zinc-100 underline decoration-zinc-700 underline-offset-4 duration-200 hover:decoration-inherit"
+              className="cursor-pointer font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 duration-200 hover:decoration-inherit dark:text-zinc-100 dark:decoration-zinc-700 dark:hover:decoration-zinc-100"
               href="https://bookmark-dnd.vercel.app"
               rel="noopener noreferrer"
               target="_blank"
             >
               DnD Bookmark
             </a>
-            <span className="font-sans text-zinc-500">{" ↗"}</span>
-          </li>
-          <li className="flex items-center gap-1 whitespace-nowrap">
-            <a
-              className=" text-zinc-100 underline decoration-zinc-700 underline-offset-4 duration-200 hover:decoration-inherit"
-              href="https://my-movies-app-ecru.vercel.app"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Films Explorer
-            </a>
-            <span className="font-sans text-zinc-500">{" ↗"}</span>
+            <span className="font-sans text-zinc-400 dark:text-zinc-500">{" ↗"}</span>
           </li>
         </ul>
       </div>
