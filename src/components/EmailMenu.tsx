@@ -1,5 +1,5 @@
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 
 import {MailIcon} from "../icons/MailIcon";
 
@@ -19,22 +19,11 @@ const EmailMenu = () => {
 
   const handleModalMenu = (e: any) => {
     e.stopPropagation();
-    document.body.classList.add("modal-open");
   };
-
-  const handleCloseModal = () => {
-    document.body.classList.remove("modal-open");
-  };
-
-  useEffect(() => {
-    return () => {
-      handleCloseModal();
-    };
-  }, []);
 
   return (
     <div className="relative">
-      <DropdownMenu.Root modal={false} onOpenChange={(isOpen) => !isOpen && handleCloseModal()}>
+      <DropdownMenu.Root modal={false}>
         {/* <DropdownMenu.Root modal={true}> */}
         <DropdownMenu.Trigger asChild>
           <button
