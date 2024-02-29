@@ -38,22 +38,22 @@ const ProjectCard = ({projectItem}: {projectItem: ProjectProps}) => {
           <time className="font-mono text-[0.8rem] text-zinc-400 dark:text-zinc-500">
             {projectItem.date}
           </time>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3.5">
             <a
-              className="whitespace-nowrap font-mono text-[0.8rem] text-rose-500 duration-200 after:font-sans after:content-['_↗'] dark:text-teal-500 dark:hover:text-teal-500/80"
+              className="whitespace-nowrap font-mono text-[0.8rem] text-zinc-900 duration-200 after:font-sans after:content-['_↗'] hover:text-zinc-900/70 dark:text-emerald-500 dark:hover:text-emerald-500/70"
               href={projectItem.repoURL}
               rel="noopener noreferrer"
               target="_blank"
             >
-              Code
+              CODE
             </a>
             <a
-              className="whitespace-nowrap font-mono text-[0.8rem] text-rose-500 duration-200 after:font-sans after:content-['_↗'] dark:text-teal-500 dark:hover:text-teal-500/80"
+              className="whitespace-nowrap font-mono text-[0.8rem] text-zinc-900 duration-200 after:font-sans after:content-['_↗'] hover:text-zinc-900/70 dark:text-emerald-500 dark:hover:text-emerald-500/70"
               href={projectItem.demoURL}
               rel="noopener noreferrer"
               target="_blank"
             >
-              Preview
+              PREVIEW
             </a>
           </div>
         </div>

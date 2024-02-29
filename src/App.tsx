@@ -1,18 +1,9 @@
-// import {useState} from "react";
-
-import {useEffect} from "react";
-
 import TheNav from "./components/TheNav";
 import Footer from "./components/Footer";
 import ScrollUpButton from "./components/ScrollUpButton";
 import PortfolioContent from "./page/PortfolioContent";
-// import ThemeToggle from "./components/ThemeToggle";
 
 function App() {
-  useEffect(() => {
-    history.pushState(null, "", location.href.split("#")[0]);
-  }, []);
-
   return (
     <>
       <header className="sticky top-3 z-10 flex w-full justify-center">

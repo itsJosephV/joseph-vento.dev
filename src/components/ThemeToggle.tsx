@@ -75,15 +75,12 @@ const ThemeToggle = ({theme, setTheme}: Props) => {
 
   return (
     <DropdownMenu.Root modal={true}>
-      <DropdownMenu.Trigger
-        className="cursor-pointer text-zinc-900/60 outline-none duration-200 hover:text-rose-500 dark:text-zinc-400 dark:md:hover:text-zinc-100"
-        onClick={(e) => e.stopPropagation()}
-      >
+      <DropdownMenu.Trigger className="cursor-pointer text-zinc-900/60 outline-none duration-200 dark:text-zinc-100/50 md:hover:text-zinc-900 dark:md:hover:text-emerald-500">
         {themeIconToggle()}
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
         <DropdownMenu.Content
-          className="z-10 min-w-[80px] origin-top space-y-1.5 rounded-md border border-zinc-900/10 bg-zinc-100/70 p-1.5 backdrop-blur-md rdx-state-closed:animate-fade-out rdx-state-open:animate-fade-in dark:border-zinc-100/10 dark:bg-zinc-900/50"
+          className="z-10 min-w-[80px] origin-top space-y-1.5 rounded-md border border-zinc-900/10 bg-zinc-100/70 p-1.5 backdrop-blur-md backdrop-saturate-[180%] rdx-state-closed:animate-fade-out rdx-state-open:animate-fade-in dark:border-zinc-100/10 dark:bg-zinc-900/50"
           side="bottom"
           sideOffset={18}
         >
@@ -91,7 +88,7 @@ const ThemeToggle = ({theme, setTheme}: Props) => {
             return (
               <DropdownMenu.Item
                 key={i}
-                className={`w-full cursor-pointer rounded-md py-0.5 text-center text-xs text-zinc-900 hover:bg-zinc-200 dark:text-zinc-100 ${theme === item.toLocaleLowerCase() && "bg-zinc-200  dark:bg-zinc-800"} outline-none duration-200  dark:hover:bg-zinc-800`}
+                className={`w-full cursor-pointer rounded-md py-0.5 text-center text-xs text-zinc-900 hover:bg-zinc-900/10 dark:text-zinc-100 ${theme === item.toLocaleLowerCase() && "bg-zinc-900/10 dark:bg-zinc-100/10"} outline-none duration-200 dark:hover:bg-zinc-100/10`}
                 onClick={() => setTheme(item.toLocaleLowerCase())}
               >
                 {item}

@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="flex items-center justify-between border-t border-t-zinc-900/10 dark:border-t-zinc-100/10 md:mx-auto md:max-w-[640px]">
         <p className="flex items-center gap-1 text-zinc-500 dark:text-zinc-400">
           <StarBurst
-            className={`size-5 cursor-pointer duration-200 ${onQuote ? "text-orange-400 hover:text-orange-500" : "text-purple-400 hover:text-purple-500"}`}
+            className={`size-5 cursor-pointer duration-200 ${onQuote ? "text-amber-400 hover:text-amber-400" : "text-purple-400 hover:text-purple-400"}`}
             onClick={() => setOnQuote(!onQuote)}
           />
 

@@ -10,7 +10,7 @@ const CurrentStack = () => {
     "text-3xl dark:text-emerald-300 text-zinc-700 duration-200 dark:hover:text-inherit hover:text-zinc-700/70";
 
   return (
-    <div className="rounded-md bg-zinc-200/50 p-4 pb-6 dark:bg-zinc-900">
+    <div className="rounded-md bg-zinc-200/70 p-4 pb-6 dark:bg-zinc-900/70">
       <h2 className="mb-2 text-center text-xl font-semibold text-zinc-900 dark:text-zinc-100">
         My Current Stack
       </h2>

@@ -1,6 +1,6 @@
 const OtherLinks = () => {
   return (
-    <div className="space-y-8">
+    <div className="space-y-7">
       <p className="dark:text-inherit">
         Designs at{" "}
         <span>
