@@ -23,7 +23,7 @@ const EmailMenu = () => {
 
   return (
     <div className="relative">
-      <DropdownMenu.Root modal={false}>
+      <DropdownMenu.Root modal={true}>
         {/* <DropdownMenu.Root modal={true}> */}
         <DropdownMenu.Trigger asChild>
           <button
