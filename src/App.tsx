@@ -6,11 +6,11 @@ import PortfolioContent from "./page/PortfolioContent";
 function App() {
   return (
     <>
-      <header className="sticky top-3 z-10 flex w-full justify-center">
+      <header className="sticky top-4 z-10 flex justify-center">
         <TheNav />
         <ScrollUpButton />
       </header>
-      <main className="mx-auto max-w-[1072px] pb-20 pt-24">
+      <main className="mx-auto max-w-[1072px] pb-20 pt-20">
         <article className="grid-layout slide-enter-content">
           <PortfolioContent />
         </article>

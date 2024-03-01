@@ -21,9 +21,9 @@ const Summary = () => {
         Front-end Developer <span className="play-fair">&</span> Designer currently based in Spain
       </p>
       <p className="mb-5 text-pretty">
-        My path is about becoming best version of myself. Currently focused on improving my skills
-        in Frontend development which involves designing and crafting appealing, remarkable and
-        user-friendly digital interfaces.
+        My path is about becoming the best version of myself. Currently focused on improving my
+        skills in Frontend development which involves designing and crafting appealing, remarkable
+        and user-friendly digital interfaces.
       </p>
       <div className="flex flex-row flex-wrap gap-2">
         <a
@@ -40,5 +40,3 @@ const Summary = () => {
 };
 
 export default Summary;
-
-// <a href="path_to_file" download="proposed_file_name">Download</a>
