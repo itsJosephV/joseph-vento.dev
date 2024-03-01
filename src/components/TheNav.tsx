@@ -49,12 +49,8 @@ const TheNav = () => {
   const {breakpoint} = useBreakpoint(BREAKPOINTS);
 
   useEffect(() => {
-    // const options = {
-    //   root: null,
-    //   rootMargin: "0px",
-    //   threshold: 0.5,
-    // };
     const threshold = 0.5;
+    const observers: IntersectionObserver[] = [];
 
     const handleIntersection = (entries: any[]) => {
       entries.forEach((entry) => {
@@ -64,8 +60,6 @@ const TheNav = () => {
       });
     };
 
-    // const observer = new IntersectionObserver(handleIntersection, {threshold: tth}).observe(section);
-
     document.querySelectorAll("section").forEach((section) => {
       const sectionHeight = section.getBoundingClientRect().height;
       let tth = threshold;
@@ -73,12 +67,15 @@ const TheNav = () => {
       if (sectionHeight > window.innerHeight * threshold) {
         tth = ((window.innerHeight * threshold) / sectionHeight) * threshold;
       }
-      new IntersectionObserver(handleIntersection, {threshold: tth}).observe(section);
+      const observer = new IntersectionObserver(handleIntersection, {threshold: tth});
+
+      observer.observe(section);
+      observers.push(observer);
     });
 
-    // return () => {
-    //   .disconnect();
-    // };
+    return () => {
+      observers.forEach((observer) => observer.disconnect());
+    };
   }, []);
 
   return (
