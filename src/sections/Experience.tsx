@@ -37,7 +37,7 @@ const Experience = () => {
   return (
     <>
       <h2 className="mb-10 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Experience</h2>
-      <ol className="relative space-y-12 border-s border-zinc-300 dark:border-zinc-700">
+      <ol className="relative space-y-10 border-s border-zinc-300 dark:border-zinc-700 md:space-y-12">
         {EXPERIENCE.map((expItem) => {
           return (
             <li key={expItem.title} className="ms-4">
