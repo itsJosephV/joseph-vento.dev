@@ -63,13 +63,13 @@ const ThemeToggle = ({theme, setTheme}: Props) => {
   function themeIconToggle() {
     switch (theme) {
       case "dark":
-        return <DarkIcon className="text-2xl" />;
+        return <DarkIcon className="size-6" />;
 
       case "light":
-        return <LightIcon className="text-2xl" />;
+        return <LightIcon className="size-6" />;
 
       case "system":
-        return <SystemIcon className="text-2xl" />;
+        return <SystemIcon className="size-6" />;
     }
   }
 

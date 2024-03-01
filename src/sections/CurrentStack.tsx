@@ -7,7 +7,7 @@ import {MongoDBIcon} from "../icons/MongoDBIcon";
 
 const CurrentStack = () => {
   const iconStyle =
-    "text-3xl dark:text-emerald-300 text-zinc-700 duration-200 dark:hover:text-inherit hover:text-zinc-700/70";
+    "size-[30px] dark:text-emerald-300 text-zinc-700 duration-200 dark:hover:text-inherit hover:text-zinc-700/70";
 
   return (
     <div className="rounded-md bg-zinc-200/70 p-4 pb-6 dark:bg-zinc-900/70">
@@ -18,7 +18,7 @@ const CurrentStack = () => {
         Mainly using React and TypeScript, complemented with the most popular frameworks like
         Next.js and Tailwind CSS.
       </p>
-      <div className="flex flex-wrap justify-center gap-5">
+      <div className="flex flex-wrap justify-center gap-5 md:gap-7">
         <ReactIcon
           className={iconStyle}
           data-tooltip-content="React"

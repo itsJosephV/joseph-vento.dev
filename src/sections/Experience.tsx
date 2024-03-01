@@ -2,23 +2,23 @@ import {ExperienceProps} from "../types";
 
 const EXPERIENCE: ExperienceProps[] = [
   {
-    title: "Web Developer as freelancer",
+    title: "Focused on Front-end Development",
     description:
-      "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+      "While currently seeking new opportunities, I am specializing in Front-end development.",
     current: true,
   },
   {
     title: "Web Developer Trainee at FULP",
     description:
-      "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
+      "I was part of the Programmers School project, I worked for four months on executing 'simulated projects.' This initiative allowed us to apply the knowledge gained during the Reboot Bootcamp, developing a meaninful project of our choice.",
     dateStart: "2023-01-01",
     dateEnd: "2023-05-01",
   },
   {
-    title: "Designer & Illustrator as freelancer",
+    title: "Designer & Illustrator freelancer",
     description:
-      "Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.",
-    dateStart: "2021-02-01",
+      "I spent a season designing logos, flyers, business cards and mockups with Adobe CC for multiple clients, and was part of a 'LANCÔME' campaign to promote a perfume as an illustrator.",
+    dateStart: "2019-02-01",
     dateEnd: "2022-11-01",
   },
 ];
@@ -37,7 +37,7 @@ const Experience = () => {
   return (
     <>
       <h2 className="mb-10 text-xl font-semibold text-zinc-900 dark:text-zinc-100">Experience</h2>
-      <ol className="relative space-y-10 border-s border-zinc-300 dark:border-zinc-700">
+      <ol className="relative space-y-12 border-s border-zinc-300 dark:border-zinc-700">
         {EXPERIENCE.map((expItem) => {
           return (
             <li key={expItem.title} className="ms-4">

@@ -26,7 +26,11 @@ const Summary = () => {
         user-friendly digital interfaces.
       </p>
       <div className="flex flex-row flex-wrap gap-2">
-        <a className="cursor-pointer rounded-md border border-zinc-900/10 bg-zinc-100 px-3 py-1.5 text-sm font-medium text-zinc-900 duration-200 hover:bg-zinc-200 dark:border-zinc-100/10 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800">
+        <a
+          className="cursor-pointer rounded-md border border-zinc-900/10 bg-zinc-100 px-3 py-1.5 text-sm font-medium text-zinc-900 duration-200 hover:bg-zinc-200 dark:border-zinc-100/10 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
+          download="josephcv.pdf"
+          href="/josephcv.pdf"
+        >
           Download CV
         </a>
         <EmailMenu />
@@ -36,3 +40,5 @@ const Summary = () => {
 };
 
 export default Summary;
+
+// <a href="path_to_file" download="proposed_file_name">Download</a>

@@ -24,8 +24,8 @@ const AboutMe = () => {
               target="_blank"
             >
               itsJosephV
-              <span className="text-[1.1rem] text-violet-400">
-                <GithubIcon />
+              <span className="text-violet-400">
+                <GithubIcon className="size-[18px]" />
               </span>
             </a>
             <a
@@ -35,8 +35,8 @@ const AboutMe = () => {
               target="_blank"
             >
               josephvp
-              <span className="text-[1.1rem] text-blue-400">
-                <LinkedInIcon />
+              <span className="text-blue-400">
+                <LinkedInIcon className="size-[18px]" />
               </span>
             </a>
           </div>

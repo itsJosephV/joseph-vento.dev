@@ -22,8 +22,8 @@ const EmailMenu = () => {
       <DropdownMenu.Root modal={true}>
         {/* <DropdownMenu.Root modal={true}> */}
         <DropdownMenu.Trigger asChild>
-          <button className="h-full rounded-md border border-zinc-900/10 bg-zinc-100 px-1.5 text-xl font-medium text-zinc-900 outline-none duration-200 hover:bg-zinc-200 dark:border-zinc-100/10 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800">
-            <MailIcon className="" />
+          <button className="h-full rounded-md border border-zinc-900/10 bg-zinc-100 pl-1.5 pr-[6.5px] text-zinc-900 outline-none duration-200 hover:bg-zinc-200 dark:border-zinc-100/10 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800">
+            <MailIcon className="size-5" />
           </button>
         </DropdownMenu.Trigger>
         <DropdownMenu.Portal>

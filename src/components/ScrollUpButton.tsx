@@ -68,12 +68,12 @@ const ScrollUpButton = () => {
 
   return (
     <button
-      className={`fixed ${isAtBottom && !isMdScreen ? "bottom-11" : "bottom-3"} right-3 flex h-10 w-10 items-center justify-center rounded-full text-zinc-900/30 transition duration-300 hover:bg-zinc-200/70 hover:text-zinc-900 dark:text-zinc-100/30 dark:hover:bg-zinc-800/70 dark:hover:text-zinc-100 ${
+      className={`fixed ${isAtBottom && !isMdScreen ? "bottom-11" : "bottom-3"} right-3 flex h-10 w-10 items-center justify-center rounded-full text-zinc-600/30 transition duration-300 hover:bg-zinc-200/70 hover:text-zinc-600 dark:text-zinc-300/30 dark:hover:bg-zinc-800/70 dark:hover:text-zinc-300 ${
         backToTopBtn ? "opacity-100" : "pointer-events-none opacity-0"
       }`}
       onClick={scrollTop}
     >
-      <ArrowTopIcon className="text-[1.3em]" />
+      <ArrowTopIcon className="size-5" />
     </button>
   );
 };
