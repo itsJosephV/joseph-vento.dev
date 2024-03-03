@@ -18,7 +18,7 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  min-height: calc(100vh - var(--footer-h));
+  min-height: calc(100dvh - var(--footer-h));
   scrollbar-gutter: auto;
   @apply dark:bg-zinc-950 bg-zinc-50 duration-300 dark:text-zinc-300 text-zinc-600 antialiased;
 }
