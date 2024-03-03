@@ -17,10 +17,10 @@ const Summary = () => {
           </a>
         </div>
       </div>
-      <h2 className="mb-7 max-w-xs text-balance text-xl text-zinc-900 dark:text-zinc-100">
+      <h2 className="mb-7 max-w-xs text-xl text-zinc-900 dark:text-zinc-100">
         Front-end Developer <span className="play-fair">&</span> Designer currently based in Spain
       </h2>
-      <p className="mb-5 text-pretty">
+      <p className="mb-5">
         My path is about becoming the best version of myself. Currently focused on improving my
         skills in Frontend development which involves designing and crafting appealing, remarkable
         and user-friendly digital interfaces.

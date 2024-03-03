@@ -14,7 +14,7 @@ const CurrentStack = () => {
       <h2 className="mb-2 text-center text-xl font-semibold text-zinc-900 dark:text-zinc-100">
         My Current Stack
       </h2>
-      <p className="mb-6 text-pretty text-center dark:text-zinc-300">
+      <p className="mb-6 text-center dark:text-zinc-300">
         Mainly using React and TypeScript, complemented with the most popular frameworks like
         Next.js and Tailwind CSS.
       </p>

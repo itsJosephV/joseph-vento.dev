@@ -6,7 +6,7 @@ const AboutMe = () => {
   const linkStyle =
     "cursor-pointer font-medium underline decoration-zinc-300 underline-offset-4 duration-200 hover:decoration-zinc-900 dark:text-zinc-100 dark:decoration-zinc-700 dark:hover:decoration-zinc-100 text-zinc-900 hover:decoration-inherit";
 
-  const socialsLinksStyle =
+  const socialLinksStyle =
     "flex flex-row-reverse items-center gap-1 whitespace-nowrap text-sm font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 duration-200 hover:decoration-zinc-900 dark:text-zinc-100 dark:decoration-zinc-700 dark:hover:decoration-zinc-100";
 
   return (
@@ -21,7 +21,7 @@ const AboutMe = () => {
           />
           <div className="ml-3 flex flex-col items-start justify-end gap-2 md:ml-0 md:mt-3">
             <a
-              className={`${socialsLinksStyle} order-2`}
+              className={`${socialLinksStyle} order-2`}
               href="https://www.github.com/itsJosephV"
               rel="noopener noreferrer"
               target="_blank"
@@ -32,7 +32,7 @@ const AboutMe = () => {
               </span>
             </a>
             <a
-              className={socialsLinksStyle}
+              className={socialLinksStyle}
               href="https://www.linkedin.com/in/josephvp/"
               rel="noopener noreferrer"
               target="_blank"
@@ -45,11 +45,11 @@ const AboutMe = () => {
           </div>
         </div>
         <div className="space-y-5">
-          <p className="text-pretty">
+          <p>
             My name is Joseph Vento, an enthusiastic Frontend Developer with an artistic background
             in Illustration and Graphic Design.
           </p>
-          <p className="text-pretty">
+          <p>
             I started programming in 2022, the year I was part of the "Full-Stack Web Development"
             program{" ("}
             <span className="inline-flex flex-wrap gap-1">
@@ -68,7 +68,7 @@ const AboutMe = () => {
             <a className={linkStyle}>Reboot Academy</a> where I learned a set of skills — teamwork,
             problem-solving, collaboration and the most demanded techs.
           </p>
-          <p className="text-pretty">
+          <p>
             Since then I've been polishing my skills through doing and exploring the dynamic world
             of web development.
           </p>

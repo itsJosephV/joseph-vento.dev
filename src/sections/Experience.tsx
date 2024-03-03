@@ -48,7 +48,7 @@ const Experience = () => {
                   : `${formatDate(expItem.dateStart as string)} - ${formatDate(expItem.dateEnd as string)}`}
               </time>
               <h4 className="mt-1 font-medium text-zinc-900 dark:text-zinc-100">{expItem.title}</h4>
-              <p className="text-pretty">{expItem.description}</p>
+              <p>{expItem.description}</p>
             </li>
           );
         })}

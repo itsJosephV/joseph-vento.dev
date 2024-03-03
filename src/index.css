@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  min-width: 0;
+}
+
 :root {
   --footer-h: 41px;
 }
@@ -17,7 +21,6 @@ body {
   min-height: calc(100vh - var(--footer-h));
   scrollbar-gutter: auto;
   @apply dark:bg-zinc-950 bg-zinc-50 duration-300 dark:text-zinc-300 text-zinc-600 antialiased;
-
 }
 
 .grid-layout {
@@ -28,8 +31,12 @@ body {
   font-family: "Playfair Display", serif;
 }
 
-.disable-link {
-  @apply text-zinc-500 cursor-not-allowed
+h1, h2, h3, h4 {
+  @apply text-balance
+}
+
+p {
+  @apply text-pretty
 }
 
 @keyframes slide-enter {

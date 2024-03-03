@@ -28,7 +28,7 @@ const ProjectCard = ({projectItem}: {projectItem: ProjectProps}) => {
             )}
           </div>
         </div>
-        <p className="mb-4 text-pretty">{projectItem.description}</p>
+        <p className="mb-4">{projectItem.description}</p>
         <ul className="mb-5 flex flex-wrap gap-2">
           {projectItem.techs.map((techItem) => {
             return <TechPill key={techItem} techItem={techItem} />;
