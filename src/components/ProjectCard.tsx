@@ -11,7 +11,7 @@ const ProjectCard = ({projectItem}: {projectItem: ProjectProps}) => {
       <div className="h-auto border-t border-t-zinc-900/10 p-3 px-4 dark:border-t-zinc-100/10">
         <div className="mb-2 flex items-center justify-between">
           <p className="font-medium text-zinc-900 dark:text-zinc-100">{projectItem.title}</p>
-          <div className="flex gap-1 text-zinc-400 dark:text-zinc-500">
+          <div className="flex gap-1.5 text-zinc-400 dark:text-zinc-500">
             {projectItem.desktop && (
               <DesktopIcon
                 data-tooltip-content="Desktop"
@@ -28,7 +28,7 @@ const ProjectCard = ({projectItem}: {projectItem: ProjectProps}) => {
             )}
           </div>
         </div>
-        <p className="mb-4">{projectItem.description}</p>
+        <p className="mb-4 text-pretty">{projectItem.description}</p>
         <ul className="mb-5 flex flex-wrap gap-2">
           {projectItem.techs.map((techItem) => {
             return <TechPill key={techItem} techItem={techItem} />;

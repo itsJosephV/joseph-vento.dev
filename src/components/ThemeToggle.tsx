@@ -75,12 +75,12 @@ const ThemeToggle = ({theme, setTheme}: Props) => {
 
   return (
     <DropdownMenu.Root modal={true}>
-      <DropdownMenu.Trigger className="cursor-pointer text-zinc-900/60 outline-none duration-200 hover:text-zinc-900 dark:text-zinc-100/50 dark:hover:text-emerald-500">
+      <DropdownMenu.Trigger className="cursor-pointer text-zinc-900/50 outline-none duration-200 hover:text-zinc-900 dark:text-zinc-100/50 dark:hover:text-emerald-500">
         {themeIconToggle()}
       </DropdownMenu.Trigger>
       <DropdownMenu.Portal>
         <DropdownMenu.Content
-          className="z-10 min-w-[80px] origin-top space-y-1.5 rounded-md border border-zinc-900/10 bg-zinc-100/70 p-1.5 backdrop-blur-md backdrop-saturate-[180%] rdx-state-closed:animate-fade-out rdx-state-open:animate-fade-in dark:border-zinc-100/10 dark:bg-zinc-900/50"
+          className="z-10 min-w-[75px] origin-top space-y-1.5 rounded-md border border-zinc-900/10 bg-zinc-100/70 p-1.5 backdrop-blur-md backdrop-saturate-[180%] rdx-state-closed:animate-fade-out rdx-state-open:animate-fade-in dark:border-zinc-100/10 dark:bg-zinc-900/50"
           side="bottom"
           sideOffset={18}
         >

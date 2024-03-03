@@ -81,7 +81,7 @@ const TheNav = () => {
   return (
     <nav
       ref={navRef}
-      className="flex items-center gap-6 rounded-full border border-zinc-900/10 bg-zinc-100/70 px-6 py-2 backdrop-blur-lg backdrop-saturate-[180%] dark:border-zinc-100/10 dark:bg-zinc-900/70"
+      className="flex items-center gap-6 rounded-full border border-zinc-900/10 bg-zinc-100/70 px-5 py-2 backdrop-blur-lg backdrop-saturate-[180%] dark:border-zinc-100/10 dark:bg-zinc-900/70"
     >
       {LINKS.map((link) => {
         return (
@@ -90,7 +90,7 @@ const TheNav = () => {
             aria-disabled={link.disabled}
             aria-label={link.label}
             className={`
-            ${activeLink === link.label ? "!text-zinc-900 dark:!text-emerald-500" : ""} 
+            ${activeLink === link.label && "!text-zinc-900 dark:!text-emerald-500"} 
             ${link.disabled ? "cursor-not-allowed text-zinc-900/20 dark:text-zinc-100/20" : "text-zinc-900/50 duration-200 hover:text-zinc-900 dark:text-zinc-100/50 dark:hover:text-emerald-500"}
             `}
             href={link.url}

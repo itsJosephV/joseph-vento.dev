@@ -1,11 +1,14 @@
 const OtherLinks = () => {
+  const linkStyle =
+    "font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 duration-200 hover:decoration-inherit dark:text-zinc-100 dark:decoration-zinc-700 dark:hover:decoration-zinc-100";
+
   return (
     <div className="space-y-7">
       <p className="dark:text-inherit">
         Designs at{" "}
         <span>
           <a
-            className="cursor-pointer font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 duration-200 hover:decoration-inherit dark:text-zinc-100 dark:decoration-zinc-700 dark:hover:decoration-zinc-100"
+            className={linkStyle}
             href="https://www.instagram.com/skepticalcreator/"
             rel="noopener noreferrer"
             target="_blank"
@@ -19,7 +22,7 @@ const OtherLinks = () => {
         <ul className="space-y-2">
           <li className="flex items-center gap-1 whitespace-nowrap">
             <a
-              className="cursor-pointer font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 duration-200 hover:decoration-inherit dark:text-zinc-100 dark:decoration-zinc-700 dark:hover:decoration-zinc-100"
+              className={linkStyle}
               href="https://passgenerator-seven.vercel.app"
               rel="noopener noreferrer"
               target="_blank"
@@ -30,7 +33,7 @@ const OtherLinks = () => {
           </li>
           <li className="flex items-center gap-1 whitespace-nowrap">
             <a
-              className="cursor-pointer font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 duration-200 hover:decoration-inherit dark:text-zinc-100 dark:decoration-zinc-700 dark:hover:decoration-zinc-100"
+              className={linkStyle}
               href="https://bookmark-dnd.vercel.app"
               rel="noopener noreferrer"
               target="_blank"
