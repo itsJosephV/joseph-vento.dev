@@ -8,7 +8,9 @@ const Summary = () => {
         <div className="flex items-center gap-2">
           <span className="hidden text-zinc-900/30 dark:text-zinc-100/30 md:block">—</span>
           <a
-            className="animate-background-wave cursor-pointer whitespace-nowrap bg-[linear-gradient(90deg,#10b981,#8b5cf6,#3b82f6,#10b981)] bg-[length:200%] bg-clip-text text-sm font-medium text-transparent [animation-duration:_3s] dark:bg-[linear-gradient(90deg,#34d399,#a78bfa,#60a5fa,#34d399)]"
+            className="animate-background-wave cursor-pointer whitespace-nowrap bg-[linear-gradient(90deg,#34d399,#a78bfa,#fb923c,#34d399)] bg-[length:200%] 
+            bg-clip-text
+            text-sm font-medium text-transparent [animation-duration:_3s] dark:bg-[linear-gradient(90deg,#6ee7b7,#c4b5fd,#fdba74,#6ee7b7)]"
             href="https://www.linkedin.com/in/josephvp/"
             rel="noopener noreferrer"
             target="_blank"
