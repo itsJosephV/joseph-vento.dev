@@ -14,11 +14,7 @@ const AboutMe = () => {
       <h2 className="mb-10 text-xl font-semibold text-zinc-900 dark:text-zinc-100">About me</h2>
       <div className="flex flex-col items-center gap-7 md:flex-row md:items-start md:gap-4">
         <div className="flex w-full md:flex-col">
-          <img
-            alt=""
-            className="size-36 rounded-md object-cover md:mt-1.5"
-            src="https://www.wecb.fm/wp-content/uploads/2023/11/Review-DRAKE-For-All-The-Dogs-Scary-Hours-Edition.jpg"
-          />
+          <img alt="" className="size-36 rounded-md object-cover md:mt-1.5" src="me.webp" />
           <div className="ml-3 flex flex-col items-start justify-end gap-2 md:ml-0 md:mt-3">
             <a
               className={`${socialLinksStyle} order-2`}

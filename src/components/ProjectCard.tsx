@@ -40,7 +40,7 @@ const ProjectCard = ({projectItem}: {projectItem: ProjectProps}) => {
           </time>
           <div className="flex items-center gap-3.5">
             <a
-              className="whitespace-nowrap font-mono text-[0.8rem] text-zinc-900 duration-200 after:font-sans after:content-['_↗'] hover:text-zinc-900/70 dark:text-emerald-500 dark:hover:text-emerald-500/70"
+              className="whitespace-nowrap font-mono text-[0.8rem] text-zinc-900 duration-200 after:font-sans after:content-['_↗'] hover:text-zinc-900/70 dark:text-emerald-400 dark:hover:text-emerald-400/70"
               href={projectItem.repoURL}
               rel="noopener noreferrer"
               target="_blank"
@@ -48,7 +48,7 @@ const ProjectCard = ({projectItem}: {projectItem: ProjectProps}) => {
               CODE
             </a>
             <a
-              className="whitespace-nowrap font-mono text-[0.8rem] text-zinc-900 duration-200 after:font-sans after:content-['_↗'] hover:text-zinc-900/70 dark:text-emerald-500 dark:hover:text-emerald-500/70"
+              className="whitespace-nowrap font-mono text-[0.8rem] text-zinc-900 duration-200 after:font-sans after:content-['_↗'] hover:text-zinc-900/70 dark:text-emerald-400 dark:hover:text-emerald-500/70"
               href={projectItem.demoURL}
               rel="noopener noreferrer"
               target="_blank"

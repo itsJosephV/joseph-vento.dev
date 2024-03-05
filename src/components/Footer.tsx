@@ -30,7 +30,7 @@ const Footer = () => {
         </p>
         <a
           className="cursor-pointer tracking-wide text-zinc-500 underline decoration-zinc-300 underline-offset-4 duration-200 hover:decoration-inherit dark:text-zinc-400 dark:decoration-zinc-700 dark:hover:decoration-inherit"
-          href=""
+          href="https://github.com/itsJosephV/portfolio-jv"
           rel="noopener noreferrer"
           target="_blank"
         >
