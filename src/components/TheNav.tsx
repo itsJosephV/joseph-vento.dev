@@ -90,8 +90,8 @@ const TheNav = () => {
             aria-disabled={link.disabled}
             aria-label={link.label}
             className={`
-            ${activeLink === link.label && "!text-zinc-900 dark:!text-emerald-500"} 
-            ${link.disabled ? "cursor-not-allowed text-zinc-900/20 dark:text-zinc-100/20" : "text-zinc-900/50 duration-200 hover:text-zinc-900 dark:text-zinc-100/50 dark:hover:text-emerald-500"}
+            ${activeLink === link.label && "!text-zinc-900 dark:!text-emerald-400"} 
+            ${link.disabled ? "cursor-not-allowed text-zinc-900/20 dark:text-zinc-100/20" : "text-zinc-900/50 duration-200 hover:text-zinc-900 dark:text-zinc-100/50 dark:hover:text-emerald-400"}
             `}
             href={link.url}
             onClick={(e) => link.disabled && e.preventDefault()}

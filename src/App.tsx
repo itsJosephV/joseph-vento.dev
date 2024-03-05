@@ -1,3 +1,4 @@
+import "./SlideEnter.css";
 import TheNav from "./components/TheNav";
 import Footer from "./components/Footer";
 import ScrollUpButton from "./components/ScrollUpButton";

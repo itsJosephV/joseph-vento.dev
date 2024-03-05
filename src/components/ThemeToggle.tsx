@@ -1,5 +1,5 @@
-import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
-import {useEffect} from "react";
+import * as Popover from "@radix-ui/react-popover";
+import {useEffect, useState} from "react";
 
 import {DarkIcon} from "../icons/DarkIcon";
 import {LightIcon} from "../icons/LightIcon";
@@ -11,6 +11,7 @@ type Props = {
 };
 
 const ThemeToggle = ({theme, setTheme}: Props) => {
+  const [isPopoverOpen, setIsPopoverOpen] = useState(false);
   const themeOptions = ["Dark", "Light", "System"];
   const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
   const element = document.documentElement;
@@ -73,31 +74,47 @@ const ThemeToggle = ({theme, setTheme}: Props) => {
     }
   }
 
+  const handleThemeButton = (item: string) => {
+    setTheme(item.toLocaleLowerCase());
+    setIsPopoverOpen(false);
+  };
+
+  useEffect(() => {
+    console.log(isPopoverOpen, "popover");
+  }, [isPopoverOpen]);
+
   return (
-    <DropdownMenu.Root modal={true}>
-      <DropdownMenu.Trigger className="cursor-pointer text-zinc-900/50 outline-none duration-200 hover:text-zinc-900 dark:text-zinc-100/50 dark:hover:text-emerald-500">
+    <Popover.Root
+      modal={true}
+      open={isPopoverOpen}
+      onOpenChange={(isOpen) => {
+        setIsPopoverOpen(isOpen);
+        console.log(isPopoverOpen, "openchange");
+      }}
+    >
+      <Popover.Trigger className="icon-theme-state cursor-pointer text-zinc-900/50 outline-none duration-200 hover:text-zinc-900 dark:text-zinc-100/50 dark:hover:text-emerald-400">
         {themeIconToggle()}
-      </DropdownMenu.Trigger>
-      <DropdownMenu.Portal>
-        <DropdownMenu.Content
-          className="z-10 min-w-[75px] origin-top space-y-1.5 rounded-md border border-zinc-900/10 bg-zinc-100/70 p-1.5 backdrop-blur-md backdrop-saturate-[180%] rdx-state-closed:animate-fade-out rdx-state-open:animate-fade-in dark:border-zinc-100/10 dark:bg-zinc-900/50"
+      </Popover.Trigger>
+      <Popover.Portal>
+        <Popover.Content
+          className="z-10 flex min-w-[75px] origin-top flex-col gap-1.5 rounded-md border border-zinc-900/10 bg-zinc-100/70 p-1.5 backdrop-blur-md backdrop-saturate-[180%] rdx-state-closed:animate-fade-out rdx-state-open:animate-fade-in dark:border-zinc-100/10 dark:bg-zinc-900/50"
           side="bottom"
-          sideOffset={18}
+          sideOffset={17}
         >
           {themeOptions.map((item, i) => {
             return (
-              <DropdownMenu.Item
+              <button
                 key={i}
                 className={`w-full cursor-pointer rounded-md py-0.5 text-center text-xs text-zinc-900 hover:bg-zinc-900/10 dark:text-zinc-100 ${theme === item.toLocaleLowerCase() && "bg-zinc-900/10 dark:bg-zinc-100/10"} outline-none duration-200 dark:hover:bg-zinc-100/10`}
-                onClick={() => setTheme(item.toLocaleLowerCase())}
+                onClick={() => handleThemeButton(item)}
               >
                 {item}
-              </DropdownMenu.Item>
+              </button>
             );
           })}
-        </DropdownMenu.Content>
-      </DropdownMenu.Portal>
-    </DropdownMenu.Root>
+        </Popover.Content>
+      </Popover.Portal>
+    </Popover.Root>
   );
 };
 
