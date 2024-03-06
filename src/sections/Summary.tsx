@@ -24,14 +24,14 @@ const Summary = () => {
       </h2>
       <p className="mb-5">
         My path is about becoming the best version of myself. Currently focused on improving my
-        skills in Frontend development which involves designing and crafting appealing, remarkable
-        and user-friendly digital interfaces.
+        skills in web development which involves designing and crafting appealing, remarkable and
+        user-friendly digital interfaces.
       </p>
       <div className="flex flex-row flex-wrap gap-2">
         <a
           className="rounded-md border border-zinc-900/10 bg-zinc-100 px-3 py-1.5 text-sm font-medium text-zinc-900 duration-200 hover:bg-zinc-200 dark:border-zinc-100/10 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
-          download="josephcv.pdf"
-          href="/josephcv.pdf"
+          download="CV_Joseph.pdf"
+          href="/CV_Joseph.pdf"
         >
           Download CV
         </a>

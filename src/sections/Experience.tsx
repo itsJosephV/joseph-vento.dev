@@ -2,9 +2,9 @@ import {ExperienceProps} from "../types";
 
 const EXPERIENCE: ExperienceProps[] = [
   {
-    title: "Focused on Front-end Development",
+    title: "Front-end Developer freelancer",
     description:
-      "While currently seeking new opportunities, I am specializing in Front-end development.",
+      "Currently working as a freelance developer, at the same searching for new job opportunities.",
     current: true,
   },
   {

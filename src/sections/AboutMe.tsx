@@ -50,7 +50,7 @@ const AboutMe = () => {
         </div>
         <div className="space-y-5">
           <p>
-            My name is Joseph Vento, an enthusiastic Frontend Developer with an artistic background
+            My name is Joseph Vento, an enthusiastic Front-end Developer with an artistic background
             in Illustration and Graphic Design.
           </p>
           <p>
