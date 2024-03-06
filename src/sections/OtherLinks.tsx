@@ -1,6 +1,8 @@
+import {LinkArrow} from "../icons/LinkArrow";
+
 const OtherLinks = () => {
   const linkStyle =
-    "font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 duration-200 hover:decoration-inherit dark:text-zinc-100 dark:decoration-zinc-700 dark:hover:decoration-zinc-100";
+    "items-center whitespace-nowrap font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 duration-200 hover:decoration-inherit dark:text-zinc-100 dark:decoration-zinc-700 dark:hover:decoration-zinc-100";
 
   return (
     <div className="space-y-7">
@@ -8,7 +10,7 @@ const OtherLinks = () => {
         Designs at{" "}
         <span>
           <a
-            className={linkStyle}
+            className="whitespace-nowrap font-medium text-zinc-900 underline decoration-zinc-300 underline-offset-4 duration-200 hover:decoration-inherit dark:text-zinc-100 dark:decoration-zinc-700 dark:hover:decoration-zinc-100"
             href="https://www.instagram.com/skepticalcreator/"
             rel="noopener noreferrer"
             target="_blank"
@@ -20,7 +22,7 @@ const OtherLinks = () => {
       <div>
         <p className="mb-3 dark:text-inherit">Check out other projects</p>
         <ul className="space-y-2">
-          <li className="flex items-center gap-1 whitespace-nowrap">
+          <li className="flex items-center">
             <a
               className={linkStyle}
               href="https://passgenerator-seven.vercel.app"
@@ -29,9 +31,11 @@ const OtherLinks = () => {
             >
               Password Generator
             </a>
-            <span className="font-sans text-zinc-400 dark:text-zinc-500">{" ↗"}</span>
+            <span className="text-zinc-400 dark:text-zinc-500">
+              <LinkArrow className="size-4" />
+            </span>
           </li>
-          <li className="flex items-center gap-1 whitespace-nowrap">
+          <li className="flex items-center">
             <a
               className={linkStyle}
               href="https://bookmark-dnd.vercel.app"
@@ -40,7 +44,9 @@ const OtherLinks = () => {
             >
               DnD Bookmark
             </a>
-            <span className="font-sans text-zinc-400 dark:text-zinc-500">{" ↗"}</span>
+            <span className="text-zinc-400 dark:text-zinc-500">
+              <LinkArrow className="size-4" />
+            </span>
           </li>
         </ul>
       </div>

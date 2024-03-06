@@ -31,7 +31,7 @@ body {
   margin: 0;
   min-height: calc(100dvh - var(--footer-h));
   scrollbar-gutter: auto;
-  @apply dark:bg-zinc-950 bg-zinc-50 duration-300 dark:text-zinc-300 text-zinc-600 antialiased;
+  @apply dark:bg-zinc-950 bg-zinc-50 dark:text-zinc-300 text-zinc-600 antialiased;
 }
 
 .grid-layout {
