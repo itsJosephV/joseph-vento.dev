@@ -86,9 +86,8 @@ const TheNav = () => {
       <ul className="flex w-full items-center gap-6">
         {LINKS.map((link) => {
           return (
-            <li className="flex whitespace-nowrap">
+            <li key={link.title} className="flex whitespace-nowrap">
               <a
-                key={link.title}
                 aria-disabled={link.disabled}
                 aria-label={link.label}
                 className={`

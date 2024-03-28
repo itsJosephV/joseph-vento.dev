@@ -33,7 +33,10 @@ const EmailMenu = () => {
         }}
       >
         <Popover.Trigger asChild>
-          <button className="icon-email-state h-full rounded-md border border-zinc-900/10 bg-zinc-100 pl-1.5 pr-[6.5px] text-zinc-900 outline-none duration-200 hover:bg-zinc-200 dark:border-zinc-100/10 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800">
+          <button
+            className="icon-email-state h-full rounded-md border border-zinc-900/10 bg-zinc-100 pl-1.5 pr-[6.5px] text-zinc-900 outline-none duration-200 hover:bg-zinc-200 dark:border-zinc-100/10 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
+            // onMouseDown={(e) => e.stopPropagation()}
+          >
             <MailIcon className="size-5" />
           </button>
         </Popover.Trigger>
