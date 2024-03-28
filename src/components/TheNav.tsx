@@ -81,26 +81,32 @@ const TheNav = () => {
   return (
     <nav
       ref={navRef}
-      className="flex items-center gap-6 rounded-full border border-zinc-900/10 bg-zinc-100/70 px-5 py-2 backdrop-blur-lg backdrop-saturate-[180%] dark:border-zinc-100/10 dark:bg-zinc-900/70"
+      className="rounded-full border border-zinc-900/10 bg-zinc-100/70 px-5 py-2 backdrop-blur-lg backdrop-saturate-[180%] dark:border-zinc-100/10 dark:bg-zinc-900/70"
     >
-      {LINKS.map((link) => {
-        return (
-          <a
-            key={link.title}
-            aria-disabled={link.disabled}
-            aria-label={link.label}
-            className={`
+      <ul className="flex w-full items-center gap-6">
+        {LINKS.map((link) => {
+          return (
+            <li className="flex whitespace-nowrap">
+              <a
+                key={link.title}
+                aria-disabled={link.disabled}
+                aria-label={link.label}
+                className={`
             ${activeLink === link.label && "!text-zinc-900 dark:!text-emerald-400"} 
-            ${link.disabled ? "cursor-not-allowed text-zinc-900/20 dark:text-zinc-100/20" : "text-zinc-900/50 duration-200 hover:text-zinc-900 dark:text-zinc-100/50 dark:hover:text-emerald-400"}
+            ${link.disabled ? "cursor-not-allowed text-zinc-900/20 dark:text-zinc-100/20" : " leading-none text-zinc-900/50 duration-200 hover:text-zinc-900 dark:text-zinc-100/50 dark:hover:text-emerald-400"}
             `}
-            href={link.url}
-            onClick={(e) => link.disabled && e.preventDefault()}
-          >
-            {breakpoint && breakpoint === "md" ? link.title : link.icon}
-          </a>
-        );
-      })}
-      <ThemeToggle setTheme={setTheme} theme={theme} />
+                href={link.url}
+                onClick={(e) => link.disabled && e.preventDefault()}
+              >
+                {breakpoint && breakpoint === "md" ? link.title : link.icon}
+              </a>
+            </li>
+          );
+        })}
+        <li className="inline-flex">
+          <ThemeToggle setTheme={setTheme} theme={theme} />
+        </li>
+      </ul>
     </nav>
   );
 };
