@@ -10,6 +10,8 @@
 
 :root {
   --footer-h: 41px;
+  --grid-dark: rgba(113,113,122,0.08);
+  --grid-light: rgba(161,161,170,0.08)
 }
 
 html {
@@ -31,7 +33,10 @@ body {
   margin: 0;
   min-height: calc(100dvh - var(--footer-h));
   scrollbar-gutter: auto;
-  @apply dark:bg-zinc-950 bg-zinc-50 dark:text-zinc-300 text-zinc-600 antialiased;
+  @apply dark:bg-zinc-950 bg-zinc-50 dark:text-zinc-300 text-zinc-600 antialiased
+  before:fixed before:bg-[linear-gradient(to_right,var(--grid-light)_1px,transparent_1px),linear-gradient(to_bottom,var(--grid-light)_1px,transparent_1px)] before:dark:bg-[linear-gradient(to_right,var(--grid-dark)_1px,transparent_1px),linear-gradient(to_bottom,var(--grid-dark)_1px,transparent_1px)] before:bg-[size:20px_20px] 
+  before:[mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] 
+  before:h-full before:w-full before:-z-10 before:inset-0
 }
 
 .grid-layout {
