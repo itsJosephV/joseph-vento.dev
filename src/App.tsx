@@ -3,7 +3,7 @@ import TheNav from "./components/TheNav";
 import Footer from "./components/Footer";
 import ScrollUpButton from "./components/ScrollUpButton";
 import PortfolioContent from "./page/PortfolioContent";
-
+// slide-enter-content
 function App() {
   return (
     <>
@@ -11,7 +11,7 @@ function App() {
         <TheNav />
         <ScrollUpButton />
       </header>
-      <main className="mx-auto max-w-[1072px] pb-20 pt-20">
+      <main className="mx-auto max-w-[1072px] py-20">
         <article className="grid-layout slide-enter-content">
           <PortfolioContent />
         </article>

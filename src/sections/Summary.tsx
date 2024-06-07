@@ -1,4 +1,5 @@
 import EmailMenu from "../components/EmailMenu";
+import "../SlideEnter.css";
 
 const Summary = () => {
   return (

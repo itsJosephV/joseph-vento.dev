@@ -52,7 +52,7 @@ const ProjectCard = ({projectItem}: {projectItem: ProjectProps}) => {
               </span>
             </a>
             <a
-              className="flex items-center whitespace-nowrap font-mono text-sm text-zinc-900 duration-200 hover:text-zinc-900/70 dark:text-emerald-400 dark:hover:text-emerald-500/70"
+              className={`flex items-center whitespace-nowrap font-mono text-sm text-zinc-900 duration-200 hover:text-zinc-900/70 dark:text-emerald-400 dark:hover:text-emerald-500/70 ${projectItem.demoURL === "" ? "pointer-events-none cursor-default opacity-50" : ""}`}
               href={projectItem.demoURL}
               rel="noopener noreferrer"
               target="_blank"
