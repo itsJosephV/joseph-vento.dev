@@ -9,6 +9,7 @@ const TechPill = ({techItem}: {techItem: string}) => {
     "bg-sky-500": techItem === "React",
     "bg-blue-500": techItem === "TypeScript",
     "bg-violet-500": techItem === "Radix UI",
+    "bg-rose-500": techItem === "Zustand",
   });
 
   return (

@@ -32,7 +32,7 @@ const PROJECTS: ProjectProps[] = [
     title: "My own Readme.so 🗒️",
     description: "My own version of the popular markdown editor readme.so, work in progress...",
     image: "../project-three.webp",
-    techs: ["React", "TypeScript", "Tailwind CSS"],
+    techs: ["React", "TypeScript", "Tailwind CSS", "Zustand"],
     repoURL: "https://github.com/itsJosephV/readme-jv",
     demoURL: "",
     date: "06/24",
