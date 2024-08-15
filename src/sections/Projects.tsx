@@ -1,13 +1,15 @@
 import ProjectCard from "../components/ProjectCard";
 import {ProjectProps} from "../types";
 
+//TODO: ADD "LAST UPDATE"
+
 const PROJECTS: ProjectProps[] = [
   {
     projectID: 1,
     title: "Tailwind Snippets 🪄",
     description:
       "Collection of snippets for seamless integration into your apps. This is a source code study project, original work by Alexandru Turcanu.",
-    image: "../project-two.webp",
+    image: "../project-1.webp",
     techs: ["React", "TypeScript", "Tailwind CSS", "Radix UI"],
     repoURL: "https://github.com/itsJosephV/snippets-tailwind-study",
     demoURL: "https://snippets-tailwind-study.vercel.app",
@@ -19,7 +21,7 @@ const PROJECTS: ProjectProps[] = [
     title: "Dictionary App 📚",
     description:
       "English dictionary app with functionalities similar to those found on macOS and more. Powered by Rapid API.",
-    image: "../project-one.webp",
+    image: "../project-2.webp",
     techs: ["React", "TypeScript", "Tailwind CSS", "Radix UI"],
     repoURL: "https://github.com/itsJosephV/dictionary-app/tree/main",
     demoURL: "https://dictionary-app-phi-weld.vercel.app",
@@ -29,13 +31,15 @@ const PROJECTS: ProjectProps[] = [
   },
   {
     projectID: 3,
-    title: "My own Readme.so 🗒️",
-    description: "My own version of the popular markdown editor readme.so, work in progress...",
-    image: "../project-three.webp",
-    techs: ["React", "TypeScript", "Tailwind CSS", "Zustand"],
+    title: "My own Readme constructor v2 🗒️",
+    description:
+      "A personal take on the popular markdown editor, Readme.so. While there are still areas to refine, the app is fully functional and ready for use.",
+    image: "../project-3-v2.webp",
+    techs: ["React", "TypeScript", "Tailwind CSS", "Zustand", "Radix UI"],
     repoURL: "https://github.com/itsJosephV/readme-jv",
-    demoURL: "",
+    demoURL: "https://readmejv.vercel.app",
     date: "06/24",
+    // thu 15 aug last update
     desktop: true,
   },
 ];
